@@ -1,5 +1,5 @@
 const Repository=require('./Repository.js');
-const request=require('./models/request.model.js');
+//const request=require('../models/request.model.js');
 
 class RequestRepo extends Repository{
     constructor(request){
@@ -7,4 +7,4 @@ class RequestRepo extends Repository{
     }
 }
 
-module.exports=RequestRepo;
+module.exports=new RequestRepo;

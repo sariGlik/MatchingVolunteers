@@ -10,7 +10,6 @@ const requstSchema=new mongoose.Schema({
     numOfPeople:Number,
     volunteerCode:Number
 });
-//מיקום, תיאור הבעיה, טלפון ליצירת קשר, סטטוס, מס' האנשים התקועים, קוד עדיפות, קוד מתנדב
 
 const Request=mongoose.model('volunteer',requstSchema);
 

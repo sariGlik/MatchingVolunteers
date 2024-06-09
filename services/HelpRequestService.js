@@ -3,7 +3,7 @@ const reqestRepo=require('../dal-repository/RequestRepo');
 class HelpRequestService extends Service{
     constructor()
     {
-        super(helpRequestService);
+        super(reqestRepo);
     }
 }
 module.exports=new HelpRequestService();

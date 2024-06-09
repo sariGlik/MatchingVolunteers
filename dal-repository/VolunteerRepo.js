@@ -7,4 +7,4 @@ class VolunteerRepo extends Repository{
     }
 }
 
-module.exports=VolunteerRepo;
+module.exports= new VolunteerRepo;

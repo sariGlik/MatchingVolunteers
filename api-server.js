@@ -9,8 +9,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/volunteer',volunteerRouter);
-app.use('/api/helpRequest',helpRequestsRouter);
+app.use('/api/volunteers',volunteerRouter);
+app.use('/api/helpRequests',helpRequestsRouter);
 
 app.use((err, req, res, next) => {
     console.log(err);
