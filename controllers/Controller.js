@@ -8,6 +8,7 @@ class Controller{
 
     async getAll(req, res, next) {
         try {
+            console.log("query: "+JSON.stringify(req.query));
             const result = await this.service.getAll(req.query);
             //return res.status(response.statusCode).json(response);
             return res.json(result);
@@ -17,8 +18,9 @@ class Controller{
     }
 
     async get(req, res, next) {
-        const { id } = req.params;
-
+        const  id  = req.params.volunteerId;
+        console.log(id);
+        //const id= volunteerId;
         try {
             const response = await this.service.get(id);
 

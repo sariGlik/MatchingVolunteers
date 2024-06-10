@@ -3,7 +3,7 @@ require('dotenv').config();
 
 async function connect() {
     try {
-        await mongoose.connect(process.env.CONNECTIONSTRING);
+        await mongoose.connect(process.env.CONNECTION_STRING);
         console.log("concting to the server...");
 
     } catch (error) {
@@ -12,6 +12,6 @@ async function connect() {
     }
 }
 
-connect();
+//connect();
 
 module.exports = { connect };

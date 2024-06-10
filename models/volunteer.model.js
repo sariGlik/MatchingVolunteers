@@ -1,12 +1,12 @@
 const mongoose=require('mongoose');
 
 const volunteerSchema=new mongoose.Schema({
-    id:Number,
-    name:String,
+    _id:Number,
+    firstName:String,
     phone:String,
-    helps:Array
+    whatYouCanHelp:Array
 });
 
-const Volunteer=mongoose.model('volunteer',volunteerSchema);
+const Volunteer=mongoose.model('volunteers',volunteerSchema);
 
 module.exports=Volunteer;

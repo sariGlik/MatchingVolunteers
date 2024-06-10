@@ -2,9 +2,9 @@ const Repository=require('./Repository.js');
 const volunteer=require('../models/volunteer.model.js');
 
 class VolunteerRepo extends Repository{
-    constructor(volunteer){
+    constructor(){
         super(volunteer);
     }
 }
 
-module.exports= new VolunteerRepo;
+module.exports= new VolunteerRepo();

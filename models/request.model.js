@@ -11,6 +11,6 @@ const requstSchema=new mongoose.Schema({
     volunteerCode:Number
 });
 
-const Request=mongoose.model('volunteer',requstSchema);
+const Request=mongoose.model('helpRequests',requstSchema);
 
 module.exports=Request;
