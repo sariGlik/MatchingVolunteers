@@ -6,5 +6,4 @@ class HelpRequestService extends Service{
         super(reqestRepo);
     }
 }
-
 module.exports=new HelpRequestService();
